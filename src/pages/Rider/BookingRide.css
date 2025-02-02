@@ -1,0 +1,125 @@
+/* General container styling */
+.booking-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left form section */
+.booking-form {
+  flex: 1 1 40%;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.booking-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.suggestions-container {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Button group styling */
+.button-group {
+  margin-top: 10px;
+}
+
+.request-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.request-button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.request-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Map container styling */
+.map-container {
+  flex: 1 1 55%;
+  max-width: 55%;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .booking-container {
+    flex-direction: column;
+  }
+
+  .booking-form,
+  .map-container {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
